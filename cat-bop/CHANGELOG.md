@@ -1,8 +1,6 @@
 # Changelog
 
-## [v1.0.0] - 2023-07-18
+## [v0.0.1] - 2025-03-05
 
 ### Added
-- Display battery percentage
-- Level moves and changes color
-- Width adapts
+- Cat Bop

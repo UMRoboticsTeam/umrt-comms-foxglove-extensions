@@ -41,3 +41,30 @@ This builds a single ```*.foxe``` file of the custom extension to be sent and up
 ```sh
 npm run package
 ```
+
+
+
+# cat-bop
+UMRT demo extension that displays a cat bop image that changes depending on a value from a number topic
+
+
+# foxglove-battery-extension
+[Lynxdrone/foxglove-battery-extension](https://github.com/Lynxdrone/foxglove-battery-extension)
+
+
+# foxglove-buttons
+UMRT extension to publish messages to a topic on button clicks
+* Button types: push, toggle
+* Used to toggle active camera
+
+# foxglove-joystick
+[joshnewans/foxglove-joystick](https://github.com/joshnewans/foxglove-joystick)
+* 
+
+# foxglove-timer
+UMRT test extension to view a clock or timer
+* View task timer countdown during tasks
+
+# pdf_viewer
+UMRT test demo extension to view PDF files in foxglove window
+* To view task information during tasks in Foxglove UI
