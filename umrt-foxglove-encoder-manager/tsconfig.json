@@ -1,0 +1,44 @@
+{
+  "extends": "create-foxglove-extension/tsconfig/tsconfig.json",
+
+  "include": ["./src/**/*"], // Keep this as it's more specific for your project structure
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": ["dom"], // This is fine
+
+    // These two settings prevent typescript from emitting .d.ts files we don't need in
+    // the compiled extension.
+    "composite": false,
+    "declaration": false,
+
+    // Additional TypeScript error reporting checks are enabled by default to improve code quality.
+    // Enable/disable these checks as necessary to suit your coding preferences or work with
+    // existing code
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // --- Keep ONLY the paths you explicitly added and need ---
+    // If these are NOT in the base config, then keep them here.
+    // If they ARE in the base config and work, then you don't need them here.
+    // Given previous errors, let's keep them here for explicit resolution.
+    "baseUrl": ".",
+    "paths": {
+      "@foxglove/extension": [
+        "./node_modules/@foxglove/extension"
+      ],
+      "@foxglove/extension/*": [
+        "./node_modules/@foxglove/extension/*"
+      ]
+    }
+    // DO NOT ADD noEmit: true HERE
+    // DO NOT ADD target, module, jsx, strict, esModuleInterop, skipLibCheck, moduleResolution, resolveJsonModule, isolatedModules HERE again
+  },
+  // "include": ["src", "types"], // Remove this commented out duplicate
+  "exclude": ["node_modules", "dist"] // This is correct
+}
