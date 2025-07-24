@@ -1,3 +1,11 @@
+# ⛔️ DEPRECATED REPO ⛔️
+
+This repo is no longer supported. Please use the new repo organized with git submodules at https://github.com/UMRoboticsTeam/umrt-foxglove-collection.  
+Each Foxglove extension is now maintained as its own repository, the complete list is in the collection repo.
+
+<br/><br/><br/><br/>
+
+
 # comms-foxglove-extensions
 University of Manitoba Robotics Team Custom Foxglove Extensions
 
